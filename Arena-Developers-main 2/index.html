@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Nexus — Creative Agency</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,700;1,9..144,400&family=Plus+Jakarta+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body data-theme="light">
+
+<canvas id="bgCanvas"></canvas>
+<div class="scroll-prog" id="scrollProg"></div>
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="#" class="logo" onclick="go('home');return false">Nexus<span class="logo-spark">.</span></a>
+    <ul class="nl">
+      <li><a href="#" onclick="go('home');return false" id="nl-home" class="on">Home</a></li>
+      <li><a href="#" onclick="go('services');return false" id="nl-services">Services</a></li>
+      <li><a href="#" onclick="go('about');return false" id="nl-about">About</a></li>
+      <li><a href="#" onclick="go('portfolio');return false" id="nl-portfolio">Work</a></li>
+      <li><a href="#" onclick="go('contact');return false" id="nl-contact">Contact</a></li>
+    </ul>
+    <div class="nr">
+      <button class="tbtn" onclick="toggleTheme()" id="tbtn">🌙</button>
+      <a href="#" class="btn btn-g" onclick="go('contact');return false"><span>Get Started →</span></a>
+      <button class="ham" onclick="toggleMob()" id="hamBtn"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+<div class="mob" id="mobMenu">
+  <a href="#" onclick="go('home');toggleMob();return false">Home</a>
+  <a href="#" onclick="go('services');toggleMob();return false">Services</a>
+  <a href="#" onclick="go('about');toggleMob();return false">About</a>
+  <a href="#" onclick="go('portfolio');toggleMob();return false">Work</a>
+  <a href="#" onclick="go('contact');toggleMob();return false">Contact</a>
+</div>
+
+<!-- ===== HOME ===== -->
+<div id="pg-home" class="pg on">
+  <section class="hero">
+    <div class="hero-orb o1"></div>
+    <div class="hero-orb o2"></div>
+    <div class="hero-orb o3"></div>
+    <div class="wrap hero-wrap">
+      <div class="hero-grid">
+        <div>
+          <div class="hero-badge fsu"><span class="pulse-dot"></span>Strategy · Design · Growth</div>
+          <h1 class="fsu d1">We craft brands that <span class="grad-word">ignite</span> growth.</h1>
+          <p class="hero-sub fsu d2">Nexus is a full-spectrum creative agency turning ambitious ideas into digital experiences that convert, captivate, and compound.</p>
+          <div class="hero-cta fsu d3">
+            <a href="#" class="btn btn-g" onclick="go('portfolio');return false"><span>See Our Work →</span></a>
+            <a href="#" class="btn btn-ol" onclick="go('contact');return false">Talk to Us</a>
+          </div>
+          <div class="hero-stats fsu d4">
+            <div><div class="sn c1">140+</div><div class="sl">Projects</div></div>
+            <div><div class="sn c2">98%</div><div class="sl">Satisfaction</div></div>
+            <div><div class="sn c3">12yr</div><div class="sl">Experience</div></div>
+          </div>
+        </div>
+        <div class="hv">
+          <div class="fpill fp1"><span class="fd fd-g"></span>Revenue +34% this month</div>
+          <div style="position:relative;width:100%">
+            <div class="hcard-glow"></div>
+            <div class="hcard">
+              <div class="hh">
+                <div class="hav">NX</div>
+                <div><div class="ht">Growth Dashboard</div><div class="hs">Q4 2024 · Live</div></div>
+                <div class="live-badge"><span class="live-dot"></span>LIVE</div>
+              </div>
+              <div class="cbars" id="heroChart">
+                <div class="cbar cb-p" style="height:38%"></div>
+                <div class="cbar cb-t" style="height:62%"></div>
+                <div class="cbar cb-g" style="height:75%"></div>
+                <div class="cbar cb-a" style="height:50%"></div>
+                <div class="cbar cb-r" style="height:88%"></div>
+                <div class="cbar cb-o" style="height:68%"></div>
+                <div class="cbar cb-pr" style="height:100%"></div>
+              </div>
+              <div class="clbls"><span>Jun</span><span>Jul</span><span>Aug</span><span>Sep</span><span>Oct</span><span>Nov</span><span>Dec</span></div>
+              <div class="mcards">
+                <div class="mc mc1"><div class="mcn">$2.4M</div><div class="mcl">Total Revenue</div></div>
+                <div class="mc mc2"><div class="mcn">1,284</div><div class="mcl">New Leads</div></div>
+              </div>
+            </div>
+          </div>
+          <div class="fpill fp2"><span class="fd fd-p"></span>42 new leads today</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee-wrap">
+    <div class="marquee-inner">
+      <span class="marquee-item">Brand Strategy <span>✦</span></span>
+      <span class="marquee-item">Web Development <span>✦</span></span>
+      <span class="marquee-item">Growth Marketing <span>✦</span></span>
+      <span class="marquee-item">Visual Identity <span>✦</span></span>
+      <span class="marquee-item">Analytics &amp; Insights <span>✦</span></span>
+      <span class="marquee-item">UX Design <span>✦</span></span>
+      <span class="marquee-item">Content Strategy <span>✦</span></span>
+      <span class="marquee-item">Brand Strategy <span>✦</span></span>
+      <span class="marquee-item">Web Development <span>✦</span></span>
+      <span class="marquee-item">Growth Marketing <span>✦</span></span>
+      <span class="marquee-item">Visual Identity <span>✦</span></span>
+      <span class="marquee-item">Analytics &amp; Insights <span>✦</span></span>
+      <span class="marquee-item">UX Design <span>✦</span></span>
+      <span class="marquee-item">Content Strategy <span>✦</span></span>
+    </div>
+  </div>
+
+  <!-- Services Preview -->
+  <section class="blob-section bg2 pad5">
+    <div class="blob b1"></div>
+    <div class="blob b2"></div>
+    <div class="wrap reveal">
+      <div class="section-head">
+        <div class="slbl jc">What We Do</div>
+        <h2>Capabilities that <span class="grad-word">drive results</span></h2>
+      </div>
+      <div class="sg">
+        <div class="sc" style="--gc1:#7C3AED;--gc2:#F43F5E" onclick="go('services')"><span class="sarr">↗</span><span class="si">⚡</span><div class="sh">Brand Strategy</div><p class="sp">Positioning and messaging that carves out your unique space.</p></div>
+        <div class="sc" style="--gc1:#06B6D4;--gc2:#7C3AED" onclick="go('services')"><span class="sarr">↗</span><span class="si">🎨</span><div class="sh">Digital Design</div><p class="sp">Beautiful, purposeful interfaces built for real humans.</p></div>
+        <div class="sc" style="--gc1:#10B981;--gc2:#06B6D4" onclick="go('services')"><span class="sarr">↗</span><span class="si">🚀</span><div class="sh">Growth Marketing</div><p class="sp">Data-driven campaigns that attract, convert, and retain.</p></div>
+        <div class="sc" style="--gc1:#F43F5E;--gc2:#F59E0B" onclick="go('services')"><span class="sarr">↗</span><span class="si">💻</span><div class="sh">Web Development</div><p class="sp">Fast, accessible, scalable web experiences from concept to launch.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="section-gradient-bg pad5">
+    <div class="wrap reveal">
+      <div class="section-head">
+        <div class="slbl jc">Client Love</div>
+        <h2>Trusted by <span class="grad-word">ambitious</span> companies</h2>
+      </div>
+      <div class="testg">
+        <div class="testc" style="--tc1:#7C3AED;--tc2:#F43F5E">
+          <div class="stars">★★★★★</div>
+          <p class="tq">"Nexus transformed how we present ourselves. Conversion rate jumped 60% in Q1 alone."</p>
+          <div class="ta"><div class="tav tav-pr">SR</div><div><div class="taname">Sarah R.</div><div class="tarole">CEO, Luminary Labs</div></div></div>
+        </div>
+        <div class="testc" style="--tc1:#06B6D4;--tc2:#10B981">
+          <div class="stars">★★★★★</div>
+          <p class="tq">"Working with Nexus felt like having a dedicated in-house team that genuinely cared."</p>
+          <div class="ta"><div class="tav tav-tg">MK</div><div><div class="taname">Marcus K.</div><div class="tarole">Founder, Veldt Studio</div></div></div>
+        </div>
+        <div class="testc" style="--tc1:#F59E0B;--tc2:#F97316">
+          <div class="stars">★★★★★</div>
+          <p class="tq">"Our rebrand opened doors we didn't know existed. The new identity is extraordinary."</p>
+          <div class="ta"><div class="tav tav-ao">AP</div><div><div class="taname">Aisha P.</div><div class="tarole">Director, Dune Ventures</div></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section class="pad5">
+    <div class="wrap reveal">
+      <div class="section-head">
+        <div class="slbl jc">Pricing</div>
+        <h2>Simple, <span class="grad-word">transparent</span> pricing</h2>
+        <p class="ssub center">No hidden fees. No surprises. World-class work at honest prices.</p>
+      </div>
+      <div class="prg">
+        <div class="prc">
+          <h3>Starter</h3><p class="pdesc">For early-stage startups finding their footing.</p>
+          <div class="prow"><span class="pcur">$</span><span class="pamt">2,400</span><span class="pperiod">/mo</span></div>
+          <ul class="plist"><li class="pli">Brand Identity</li><li class="pli">5-Page Website</li><li class="pli">Social Templates</li><li class="pli">Monthly Strategy Call</li></ul>
+          <a href="#" class="btn btn-ol btn-full" onclick="go('contact');return false">Get Started</a>
+        </div>
+        <div class="prc feat">
+          <div class="pbadge">★ Most Popular</div>
+          <h3>Growth</h3><p class="pdesc">For scaling companies ready to dominate.</p>
+          <div class="prow"><span class="pcur light">$</span><span class="pamt">5,800</span><span class="pperiod light">/mo</span></div>
+          <ul class="plist"><li class="pli">Full Brand System</li><li class="pli">15-Page Website</li><li class="pli">SEO &amp; Content Strategy</li><li class="pli">Paid Ad Management</li><li class="pli">Bi-weekly Reviews</li></ul>
+          <a href="#" class="btn btn-feat btn-full" onclick="go('contact');return false">Get Started</a>
+        </div>
+        <div class="prc">
+          <h3>Enterprise</h3><p class="pdesc">For established brands with complex needs.</p>
+          <div class="prow"><span class="pamt pamt-sm">Custom</span></div>
+          <ul class="plist"><li class="pli">Everything in Growth</li><li class="pli">Dedicated Team</li><li class="pli">Custom Integrations</li><li class="pli">Priority Support 24/7</li><li class="pli">Quarterly Audits</li></ul>
+          <a href="#" class="btn btn-ol btn-full" onclick="go('contact');return false">Contact Sales</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ===== SERVICES ===== -->
+<div id="pg-services" class="pg">
+  <section class="blob-section page-top-section">
+    <div class="blob b3"></div>
+    <div class="wrap">
+      <div class="slbl fsu">Services</div>
+      <h2 class="fsu d1">Everything you need to <span class="grad-word">grow online</span></h2>
+      <p class="ssub fsu d2">From strategy to execution — the full stack of your digital presence, handled with care.</p>
+      <div class="sg reveal">
+        <div class="sc" style="--gc1:#7C3AED;--gc2:#6D28D9"><span class="sarr">↗</span><span class="si">⚡</span><div class="sh">Brand Strategy</div><p class="sp">Deep market research, competitive positioning, and a brand narrative that resonates at every touchpoint.</p></div>
+        <div class="sc" style="--gc1:#F43F5E;--gc2:#E11D48"><span class="sarr">↗</span><span class="si">🎨</span><div class="sh">Visual Identity</div><p class="sp">Logo, color, typography, brand guidelines — everything to show up confidently and consistently.</p></div>
+        <div class="sc" style="--gc1:#06B6D4;--gc2:#0891B2"><span class="sarr">↗</span><span class="si">💻</span><div class="sh">Web Design &amp; Dev</div><p class="sp">Performant, accessible React websites that convert. WCAG-compliant, speed-optimized.</p></div>
+        <div class="sc" style="--gc1:#10B981;--gc2:#059669"><span class="sarr">↗</span><span class="si">🚀</span><div class="sh">Growth Marketing</div><p class="sp">SEO, paid ads, email automation, and content strategy working in sync for qualified traffic.</p></div>
+        <div class="sc" style="--gc1:#F59E0B;--gc2:#D97706"><span class="sarr">↗</span><span class="si">📊</span><div class="sh">Analytics &amp; Insights</div><p class="sp">Track what matters, surface opportunities, and make confident data-driven decisions.</p></div>
+        <div class="sc" style="--gc1:#F97316;--gc2:#EA580C"><span class="sarr">↗</span><span class="si">🤝</span><div class="sh">Consulting</div><p class="sp">Strategic advisory for founders navigating growth, pivots, fundraising, or brand transitions.</p></div>
+      </div>
+    </div>
+  </section>
+  <section class="section-pa-bg pad5">
+    <div class="wrap reveal">
+      <div class="section-head">
+        <div class="slbl jc">Process</div>
+        <h2>How we <span class="grad-word">work</span></h2>
+      </div>
+      <div class="pg-track">
+        <div class="ps" style="--pc1:#7C3AED;--pc2:#F43F5E"><div class="pn pn-pr">01</div><h4>Discovery</h4><p>Deep research into your business, goals, and audience through stakeholder interviews.</p></div>
+        <div class="ps" style="--pc1:#F43F5E;--pc2:#F59E0B"><div class="pn pn-ra">02</div><h4>Strategy</h4><p>A clear roadmap with milestones, KPIs, and a tactical plan aligned to your objectives.</p></div>
+        <div class="ps" style="--pc1:#F59E0B;--pc2:#10B981"><div class="pn pn-ag">03</div><h4>Creation</h4><p>Design, build, and iterate with your feedback at every stage — fully collaborative.</p></div>
+        <div class="ps" style="--pc1:#10B981;--pc2:#06B6D4"><div class="pn pn-gt">04</div><h4>Launch &amp; Grow</h4><p>We launch, measure, and optimize so your investment compounds over time.</p></div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ===== ABOUT ===== -->
+<div id="pg-about" class="pg">
+  <section class="blob-section page-top-section">
+    <div class="blob b4"></div>
+    <div class="wrap">
+      <div class="abg">
+        <div class="fsu">
+          <div class="slbl">Our Story</div>
+          <h2 class="fsu d1">Built by makers,<br>for <span class="grad-word">builders.</span></h2>
+          <p class="fsu d2 txt2-color lh18 mb125">Nexus was founded in 2012 by designers tired of seeing brilliant products fail due to poor presentation. We believed great ideas deserve great execution.</p>
+          <p class="fsu d3 txt2-color lh18 mb175">Today, we're 28 strategists, designers, developers, and storytellers working across three continents.</p>
+          <div class="vlist reveal">
+            <div class="vi"><div class="vn vc-p">01</div><div><div class="vh">Radical Transparency</div><p class="vp">No black boxes. You see our thinking and rationale every step of the way.</p></div></div>
+            <div class="vi"><div class="vn vc-r">02</div><div><div class="vh">Outcomes Over Output</div><p class="vp">Only results that genuinely move your business forward matter to us.</p></div></div>
+            <div class="vi"><div class="vn vc-t">03</div><div><div class="vh">Craft in Everything</div><p class="vp">From strategy deck to favicon — every detail gets our full attention.</p></div></div>
+          </div>
+        </div>
+        <div class="abv fsu d2">
+          <div class="abframe">🏆</div>
+          <div class="abbadge"><span class="abbdot"></span>Founded 2012 · 28 team members</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="bg2 pad5">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div class="slbl jc">The Team</div>
+        <h2>Meet the <span class="grad-word">people</span> behind the work</h2>
+      </div>
+      <div class="tg reveal">
+        <div class="tc" style="--tc1:#7C3AED;--tc2:#F43F5E"><div class="tp tp-pr">👩‍💼</div><div class="ti"><div class="tn">Elena Marchetti</div><div class="tr">Co-founder &amp; CEO</div><div class="tch"><span class="chip chip-p">Strategy</span><span class="chip chip-r">Vision</span></div></div></div>
+        <div class="tc" style="--tc1:#F59E0B;--tc2:#F97316"><div class="tp tp-ao">👨‍🎨</div><div class="ti"><div class="tn">James Osei</div><div class="tr">Creative Director</div><div class="tch"><span class="chip chip-a">Design</span><span class="chip chip-o">Brand</span></div></div></div>
+        <div class="tc" style="--tc1:#06B6D4;--tc2:#10B981"><div class="tp tp-tg">👩‍💻</div><div class="ti"><div class="tn">Priya Nair</div><div class="tr">Head of Engineering</div><div class="tch"><span class="chip chip-t">React</span><span class="chip chip-g">APIs</span></div></div></div>
+        <div class="tc" style="--tc1:#10B981;--tc2:#7C3AED"><div class="tp tp-gp">👨‍📊</div><div class="ti"><div class="tn">Tom Bergmann</div><div class="tr">Growth Strategist</div><div class="tch"><span class="chip chip-g">SEO</span><span class="chip chip-p">Ads</span></div></div></div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ===== PORTFOLIO ===== -->
+<div id="pg-portfolio" class="pg">
+  <section class="blob-section page-top-section">
+    <div class="blob b5"></div>
+    <div class="wrap">
+      <div class="slbl fsu">Our Work</div>
+      <h2 class="fsu d1">Projects we're <span class="grad-word">proud of</span></h2>
+      <div class="pff reveal">
+        <button class="pfb on" onclick="filterPF('all',this)">All</button>
+        <button class="pfb" onclick="filterPF('branding',this)">Branding</button>
+        <button class="pfb" onclick="filterPF('web',this)">Web</button>
+        <button class="pfb" onclick="filterPF('marketing',this)">Marketing</button>
+      </div>
+      <div class="pfg reveal" id="pfg">
+        <div class="pi" data-cat="branding"><div class="pithumb-wrap"><div class="pithumb pithumb-pr"><span class="ptag ptag-p">Branding</span>🌿</div></div><div class="pb"><h4>Verdana Organics</h4><p>Full brand identity for a sustainable food startup.</p></div></div>
+        <div class="pi" data-cat="web"><div class="pithumb-wrap"><div class="pithumb pithumb-tp"><span class="ptag ptag-t">Web</span>🏛️</div></div><div class="pb"><h4>Meridian Finance</h4><p>Redesigned platform for a leading fintech firm.</p></div></div>
+        <div class="pi" data-cat="marketing"><div class="pithumb-wrap"><div class="pithumb pithumb-ao"><span class="ptag ptag-a">Marketing</span>🚀</div></div><div class="pb"><h4>Orbit SaaS</h4><p>Campaign driving 2k+ signups in 30 days.</p></div></div>
+        <div class="pi" data-cat="branding"><div class="pithumb-wrap"><div class="pithumb pithumb-ra"><span class="ptag ptag-r">Branding</span>💎</div></div><div class="pb"><h4>Arlo Luxury</h4><p>Premium identity for a high-end jewellery house.</p></div></div>
+        <div class="pi" data-cat="web"><div class="pithumb-wrap"><div class="pithumb pithumb-gt"><span class="ptag ptag-g">Web</span>🌍</div></div><div class="pb"><h4>Atlas NGO</h4><p>Accessible multilingual site for a global nonprofit.</p></div></div>
+        <div class="pi" data-cat="marketing"><div class="pithumb-wrap"><div class="pithumb pithumb-or"><span class="ptag ptag-o">Marketing</span>📈</div></div><div class="pb"><h4>Skyline Retail</h4><p>Performance marketing program with 340% ROAS.</p></div></div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ===== CONTACT ===== -->
+<div id="pg-contact" class="pg">
+  <section class="blob-section page-top-section">
+    <div class="blob b6"></div>
+    <div class="wrap">
+      <div class="slbl fsu">Get In Touch</div>
+      <h2 class="fsu d1">Let's build something <span class="grad-word">remarkable.</span></h2>
+      <div class="cg">
+        <div class="ci reveal">
+          <div class="citem"><div class="cico cico-p">📍</div><div><div class="ch">Address</div><p class="cp">88 Strand Lane, London WC2R 1LA, UK</p></div></div>
+          <div class="citem"><div class="cico cico-t">✉️</div><div><div class="ch">Email</div><p class="cp">hello@nexusagency.co</p></div></div>
+          <div class="citem"><div class="cico cico-g">📞</div><div><div class="ch">Phone</div><p class="cp">+44 20 7946 0321</p></div></div>
+          <div class="citem"><div class="cico cico-a">🕒</div><div><div class="ch">Hours</div><p class="cp">Mon–Fri, 9am – 6pm GMT</p></div></div>
+          <div class="alert-box">
+            <h4>⚡ Fast Response Guaranteed</h4>
+            <p class="cp">We respond within 2 business hours. Mention urgency for priority handling.</p>
+          </div>
+        </div>
+        <div class="reveal">
+          <div class="contact-form" id="cForm">
+            <div class="frow">
+              <div class="fg"><label>First Name *</label><input type="text" id="fn" placeholder="Jane" /><span class="emsg" id="fn-e"></span></div>
+              <div class="fg"><label>Last Name *</label><input type="text" id="ln" placeholder="Smith" /><span class="emsg" id="ln-e"></span></div>
+            </div>
+            <div class="fg"><label>Email *</label><input type="email" id="em" placeholder="jane@company.com" /><span class="emsg" id="em-e"></span></div>
+            <div class="fg"><label>Company</label><input type="text" id="co" placeholder="Your Company" /></div>
+            <div class="fg">
+              <label>Service</label>
+              <select id="sv">
+                <option value="">Select a service...</option>
+                <option>Brand Strategy</option>
+                <option>Visual Identity</option>
+                <option>Web Design &amp; Dev</option>
+                <option>Growth Marketing</option>
+                <option>Analytics &amp; Consulting</option>
+              </select>
+            </div>
+            <div class="fg">
+              <label>Budget</label>
+              <select id="bg">
+                <option value="">Select budget...</option>
+                <option>Under $5,000</option>
+                <option>$5,000 – $15,000</option>
+                <option>$15,000 – $50,000</option>
+                <option>$50,000+</option>
+              </select>
+            </div>
+            <div class="fg"><label>Project Details *</label><textarea id="msg" placeholder="Describe your project, goals, and timeline..."></textarea><span class="emsg" id="msg-e"></span></div>
+            <button class="btn btn-g btn-full btn-lg" onclick="submitForm()"><span>Send Message →</span></button>
+          </div>
+          <div class="form-success" id="fSuccess">
+            <div class="ck">✅</div>
+            <h4>Message sent successfully!</h4>
+            <p>Thank you! We'll be in touch within 2 business hours.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="fg-grid">
+      <div>
+        <div class="fbl">Nexus<span class="logo-spark">.</span></div>
+        <p class="fbp">Crafting digital experiences that move people and grow businesses. Based in London, working globally.</p>
+        <div class="fsocs">
+          <div class="fsoc">in</div>
+          <div class="fsoc">✕</div>
+          <div class="fsoc">◉</div>
+          <div class="fsoc">⬡</div>
+        </div>
+      </div>
+      <div class="fc"><h5>Company</h5><ul><li><a href="#" onclick="go('about');return false">About</a></li><li><a href="#" onclick="go('services');return false">Services</a></li><li><a href="#" onclick="go('portfolio');return false">Work</a></li><li><a href="#" onclick="go('contact');return false">Contact</a></li></ul></div>
+      <div class="fc"><h5>Services</h5><ul><li><a href="#">Brand Strategy</a></li><li><a href="#">Visual Identity</a></li><li><a href="#">Web Development</a></li><li><a href="#">Growth Marketing</a></li></ul></div>
+      <div class="fc"><h5>Connect</h5><ul><li><a href="#">LinkedIn</a></li><li><a href="#">Twitter / X</a></li><li><a href="#">Instagram</a></li><li><a href="#">Dribbble</a></li></ul></div>
+    </div>
+    <div class="fb">
+      <span>© 2024 Nexus Agency Ltd. All rights reserved.</span>
+      <span>Privacy · Terms</span>
+    </div>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
